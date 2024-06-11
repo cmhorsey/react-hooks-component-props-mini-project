@@ -2,7 +2,6 @@ import React from "react"
 import Article from "./Article";
 
 function ArticleList({posts}) {
-
   return (
     <>
     <main>
@@ -12,6 +11,7 @@ function ArticleList({posts}) {
       key={post.id}
       title={post.title}
       date={post.date}
+      minutes={post.minutes}
       preview={post.preview}
     />
   )
